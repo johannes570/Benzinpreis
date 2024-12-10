@@ -65,7 +65,6 @@ void fetchAndDisplayFuelPrice() {
 
       if (doc["ok"]) {
         float price = doc["prices"][stationID]["e5"];
-        Serial.println(doc["prices"][stationID]["e5"].as<String>());
         // Kleinere Schriftart und neue Positionierung
         u8g2.clearBuffer();
         u8g2.setFont(u8g2_font_5x8_tr); // Kleine Schriftart
